@@ -70,13 +70,13 @@ public class LinkedList<T> implements List<T>{
 	    while(runner2.next != null){
 		    if(runner1.data == runner2.data)
                         j++;
-		    
-		     if(j>k){
+                runner2 = runner2.next;
+	    }
+                  if(j>k){
 	              k=j;
         	      re = runner1;
 		    }
-                runner2 = runner2.next;
-	    }
+	     
 	    runner2 = head;
          runner1 = runner1.next;
      }
