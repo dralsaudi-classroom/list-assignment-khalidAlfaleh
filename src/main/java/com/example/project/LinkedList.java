@@ -63,14 +63,14 @@ public class LinkedList<T> implements List<T>{
 	    Node<T> runner = current;
 	    int k =0;
      while(current.next != null){
-	    Node<T> co = currnet.data;
+	    Node<T> co = currnet;
 	    while(runner.next != null){
 		    int j=0;
-		    if(co == runner.data)
+		    if(co.data == runner.data)
                         j++;
 		    if(j>k){
 			    k=j;
-			    re = current.data;
+			    re = current;
 		    }
                 runner = runner.next;
 		    
