@@ -60,22 +60,23 @@ public class LinkedList<T> implements List<T>{
 	    
 	    findFirst();
 	    Node<T> re = null;
-	    Node<T> runner = current;
+	    Node<T> runner1 = head;
+	    Node<T> runner2 = head;
 	    int k =0;
-     while(current.next != null){
-	    Node<T> co = current;
+     while(runner1.next != null){
+	    Node<T> co = runner1;
 	         int j=0;
-	    while(runner.next != null){
-		    if(co.data == runner.data)
+	    while(runner2.next != null){
+		    if(co.data == runner2.data)
                         j++;
 		    if(j>k){
 			    k=j;
-			    re = current;
+			    re = runner1;
 		    }
-                runner = runner.next;
+                runner2 = runner2.next;
 		    
 	    }
-         current = current.next;
+         runner1 = runner1.next;
      }
 	    return re.data;
 
