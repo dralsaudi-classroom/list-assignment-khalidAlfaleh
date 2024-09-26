@@ -58,6 +58,8 @@ public class LinkedList<T> implements List<T>{
         if(empty()){
 		return null;
 	}
+	    if(head.next == null)
+		    return head.data;
 	    
 	    Node<T> re = null;
 	    Node<T> runner1 = head;
@@ -69,7 +71,7 @@ public class LinkedList<T> implements List<T>{
 		    if(runner1.data == runner2.data)
                         j++;
 		    
-		     if(j>k || head.next == null){
+		     if(j>k){
 	              k=j;
         	      re = runner1;
 		    }
