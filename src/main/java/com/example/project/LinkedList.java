@@ -74,6 +74,7 @@ public class LinkedList<T> implements List<T>{
 		    }
                 runner2 = runner2.next;
 	    }
+	     j = 0;
          runner1 = runner1.next;
      }
 	    return re.data;
