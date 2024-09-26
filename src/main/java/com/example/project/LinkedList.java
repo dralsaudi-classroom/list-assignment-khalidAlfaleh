@@ -55,9 +55,10 @@ public class LinkedList<T> implements List<T>{
         }
     }
     public T mostFrequentElement() {
-        if(empty())
+        if(empty()){
 		return null;
-	    int w =0;
+	}
+	    
 	    Node<T> re = null;
 	    Node<T> runner1 = head;
 	    Node<T> runner2 = head;
@@ -72,7 +73,6 @@ public class LinkedList<T> implements List<T>{
 			    re = runner1;
 		    }
                 runner2 = runner2.next;
-		    
 	    }
          runner1 = runner1.next;
      }
