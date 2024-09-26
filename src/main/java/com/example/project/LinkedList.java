@@ -60,7 +60,7 @@ public class LinkedList<T> implements List<T>{
 	    
 	    findFirst();
 	    Node<T> re = null;
-	    Node<T> runner = current;
+	    Node<T> runner = head;
 	    int k =0;
      while(current.next != null){
 	    Node<T> co = current;
