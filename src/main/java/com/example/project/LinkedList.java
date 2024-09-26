@@ -67,7 +67,7 @@ public class LinkedList<T> implements List<T>{
 	    while(runner.next != null){
 		    int j=0;
 		    if(co == runner.data)
-                        j++
+                        j++;
 		    if(j>k){
 			    k=j;
 			    re = current.data;
