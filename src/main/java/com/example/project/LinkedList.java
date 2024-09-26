@@ -60,12 +60,12 @@ public class LinkedList<T> implements List<T>{
 	    
 	    findFirst();
 	    Node<T> re = null;
-	    Node<T> runner = head;
+	    Node<T> runner = current;
 	    int k =0;
      while(current.next != null){
 	    Node<T> co = current;
+	         int j=0;
 	    while(runner.next != null){
-		    int j=0;
 		    if(co.data == runner.data)
                         j++;
 		    if(j>k){
