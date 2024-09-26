@@ -77,7 +77,7 @@ public class LinkedList<T> implements List<T>{
 	    }
          current = current.next;
      }
-	    return re;
+	    return re.data;
 
         //         Write the method mostFrequentElement, member of the class LinkedList, that returns
         // the most frequent element in the list. The most frequent element is the element
