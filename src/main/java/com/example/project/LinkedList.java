@@ -69,7 +69,7 @@ public class LinkedList<T> implements List<T>{
 		    if(runner1.data == runner2.data)
                         j++;
 		    
-		     if(j>=k){
+		     if(j>k || head.next == null){
 	              k=j;
         	      re = runner1;
 		    }
