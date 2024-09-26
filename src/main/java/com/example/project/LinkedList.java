@@ -1,4 +1,4 @@
-package com.example.project;
+  package com.example.project;
 
 public class LinkedList<T> implements List<T>{
 	private Node<T> head;
@@ -55,7 +55,7 @@ public class LinkedList<T> implements List<T>{
         }
     }
     public T mostFrequentElement() {
-        if(empty())
+        if(this.empty())
 		return null;
 	    
 	    findFirst();
