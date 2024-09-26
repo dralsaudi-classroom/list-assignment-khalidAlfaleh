@@ -65,9 +65,9 @@ public class LinkedList<T> implements List<T>{
 	    Node<T> runner1 = head;
 	    Node<T> runner2 = head;
 	    int k =0;
-     while(runner1 != null){
+     while(runner1.next != null){
 	         int j=0;
-	    while(runner2.next != null){
+	    while(runner2 != null){
 		    if(runner1.data == runner2.data)
                         j++;
 		    
