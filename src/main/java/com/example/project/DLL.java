@@ -97,9 +97,9 @@ public class DLL<T> {
     while (toRemove != null && toRemove != nodeE2) {
         DLLNode<T> nextToRemove = toRemove.next; // Save the next node
         // Remove toRemove from the list
-        toRemove.prev.next = nextToRemove; // Adjust previous node's next
+        toRemove.previous.next = nextToRemove; // Adjust previous node's next
         if (nextToRemove != null) {
-            nextToRemove.prev = toRemove.prev; // Adjust next node's prev
+            nextToRemove.previous = toRemove.previous; // Adjust next node's prev
         }
         toRemove = nextToRemove; // Move to the next node to remove
     }
