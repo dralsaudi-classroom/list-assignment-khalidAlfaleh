@@ -7,20 +7,14 @@ public class ListTester {
             return;
 
         while(n > 0){
-                    list.findFirst();
-            list.findNext();
-
+                 list.findFirst();
                 T temp = list.retrieve();
+                list.remove();
                 while(!(list.last())){
-                list.findFirst();
-                    
-                list.update(temp);
                     
                 list.findNext();
-
-                temp = list.retrieve();
                 }
-      
+                l.insert(temp);
                         n--;
 
         }
