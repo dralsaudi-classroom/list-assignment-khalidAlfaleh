@@ -67,22 +67,19 @@ public class DLL<T> {
     public void removeBetween(T e1, T e2) {
 	  
         
-	     DLLNode<T> runner1 = current;
-	DLLNode<T> runner2 = current;
+	     DLLNode<T> runner1 = head;
+	DLLNode<T> runner2 = head;
 int i = 0;
 	    int k = 0;
-	    while(runner1 != null && (k != 1)){
-                if(runner1.data == e1)
-                    k = 1;
-	
-                runner1 = runner1.previous;
-            }
-              while(runner2 != null && (i != 1)){
-                if(runner2.data == e2)
-		     i = 1;
-		      
+	    while( runner1 != null  && runner2 != null ){
+                if(runner1.data == e1 && runner2.data == e2) 
+                    break;
+		    
+                runner1 = runner1.next;
                 runner2 = runner2.next;
-            }
+
+             }
+
         if((runner1 != null) && (runner2 != null)){
                 runner1.next = runner2;
 		runner2.previous = runner1;
