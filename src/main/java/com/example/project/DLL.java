@@ -66,47 +66,35 @@ public class DLL<T> {
     }
     public void removeBetween(T e1, T e2) {
 
- if (head == null) return; // List is empty
+ if (head == null) return; 
 
-    // Find the nodes for e1 and e2
-    DLLNode<T> current = head;
+    DLLNode<T> runner = head;
     DLLNode<T> nodeE1 = null;
     DLLNode<T> nodeE2 = null;
 
     // Traverse the list to find e1 and e2
-    while (current != null) {
-        if (current.data.equals(e1)) {
-            nodeE1 = current;
-        } else if (current.data.equals(e2)) {
-            nodeE2 = current;
+    while (runner != null) {
+        if (runner.data.equals(e1)) {
+            nodeE1 = runner;
+        } else if (runner.data.equals(e2)) {
+            nodeE2 = runner;
         }
 
         if (nodeE1 != null && nodeE2 != null) {
             break; // Both nodes found, exit loop
         }
 
-        current = current.next; // Move to the next node
+        runner = runner.next; // Move to the next node
     }
 
     // If either node is not found, do nothing
     if (nodeE1 == null || nodeE2 == null) return;
 
-    // Remove nodes between nodeE1 and nodeE2
-    DLLNode<T> toRemove = nodeE1.next; // Start with the node after e1
+	    nodeE2.previous = nodeE1 ;
+	    nodeE1.next = nodeE2 ;
+	    current = head;
 
-    while (toRemove != null && toRemove != nodeE2) {
-        DLLNode<T> nextToRemove = toRemove.next; // Save the next node
-        // Remove toRemove from the list
-        toRemove.previous.next = nextToRemove; // Adjust previous node's next
-        if (nextToRemove != null) {
-            nextToRemove.previous = toRemove.previous; // Adjust next node's prev
-        }
-        toRemove = nextToRemove; // Move to the next node to remove
-    }
-
-    // Move current to head if the removal was successful
-    current = head; // Move the current pointer to the head
-
+  
 
 	    
         // throw new UnsupportedOperationException("Not supported yet.");
