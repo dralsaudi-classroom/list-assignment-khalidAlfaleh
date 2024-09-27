@@ -6,6 +6,10 @@ public class ListTester {
       if(list.empty())
             return;
 
+        list.findFirst();
+        if(list.findNext() == null)
+            return;
+
         while(n > 0){
                  list.findFirst();
                 T temp = list.retrieve();
