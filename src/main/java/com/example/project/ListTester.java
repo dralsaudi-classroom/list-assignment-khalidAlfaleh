@@ -3,20 +3,24 @@ package com.example.project;
 public class ListTester {
     public static <T> void circularLeftShift(List <T> list, int n)
     {
-        int i = 0;
       if(list.empty())
             return;
 
-        while(n != 0){
+        while(n > 0){
                     list.findFirst();
+            list.findNext();
 
                 T temp = list.retrieve();
-                    list.remove();
                 while(list.last()){
-                    list.findNext();
+                list.findFirst();
+                    
+                list.update(temp);
+                    
+                list.findNext();
+
+                temp = list.retrieve();
                 }
       
-                list.insert(temp);
                         n--;
 
         }
