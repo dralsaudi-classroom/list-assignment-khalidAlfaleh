@@ -72,13 +72,13 @@ public class DLL<T> {
 
 	    while(runner1 != null){
                 if(runner1.data == e1)
-                  runner1 = runnerr1;  break;
+                    break;
 	
                 runner1 = runner1.previous;
             }
               while(runner2 != null){
                 if(runner2.data == e2)
-		    runner2 = runner2;  break;
+		     break;
 		      
                 runner2 = runner2.next;
             }
