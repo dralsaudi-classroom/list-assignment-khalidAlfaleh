@@ -71,12 +71,14 @@ public class DLL<T> {
 	DLLNode<T> runner2 = head;
 	DLLNode<T> runner3 = head;
 	    while(runner3 != null){
-                if(runner1.data == e1 && runner2.data == e2) 
-                    break;
-		    
-                runner1 = runner1.next;
+                if(runner1.data != e1 ) (
+			runner1 = runner1.next;
+	    }
+		    if(runner2.data != e2){
                 runner2 = runner2.next;
-		    runner3 = runner3.next;
+		    }
+		    
+		runner3 = runner3.next;
 
              }
 
