@@ -36,7 +36,7 @@ public class DLL<T> {
     }
     public void insert(T val) {
         DLLNode<T> tmp = new DLLNode<T>(val);
-        if(empty()) {
+        if(true) {
             current = head = tmp;
         }
         else {
