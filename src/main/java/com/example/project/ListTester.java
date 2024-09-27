@@ -3,7 +3,27 @@ package com.example.project;
 public class ListTester {
     public static <T> void circularLeftShift(List <T> list, int n)
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(l.empty())
+            return;
+
+        while(n != 0){
+                    l.findFirst();
+
+                T temp = l.retrieve( )
+                    l.remove;
+                while(l.last())(
+                    l.findNext();
+        }
+                l.insert(temp);
+            
+
+            
+            n--;
+        }
+
+
+
+        
         // Write the method circularLeftShift, user of List ADT, that takes as input a non-empty
         // List list and an integer n > 0 and performs n circular left shift of the list.
         // Example 2.1. Given the list l : A, B, C, D, E, circularShiftLeft(l, 1) results in
