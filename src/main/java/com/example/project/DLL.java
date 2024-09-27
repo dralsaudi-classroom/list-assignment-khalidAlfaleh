@@ -73,7 +73,7 @@ public class DLL<T> {
 		    if(runner.data == e1)
 			    temp1 = runner;
 
-		    if(runner.data = e2)
+		    if(runner.data == e2)
 			    temp2 = runner;
 
 		    runner = runner.next;
