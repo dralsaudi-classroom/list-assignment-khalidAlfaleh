@@ -72,7 +72,7 @@ public class DLL<T> {
 
 	    while( ( (runner1 != null) && (runner2 != null) ) || ( (i == 1) && (k == 1) ) ){
 		    if(!(runner1.data == e1) )
-			    runner1 = rinner1.next;
+			    runner1 = runner1.next;
 		    else
 			    i=1;
 
@@ -85,7 +85,7 @@ public class DLL<T> {
 			    current = runner1.next;
 				    
 	    while(current != runner2){
-		    reomove();
+		   remove()
 		    current = current.next;
 	    }
                     findFirst();
