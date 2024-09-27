@@ -82,7 +82,7 @@ public class DLL<T> {
 		    }
 		    if( (runner1.data == e1) && (runner2.data == e2) ){
 			    current = runner1.next;
-			    while(current.next != runner2){
+			    while(current != runner2){
 				    remove();
 				    current = current.next;
 			    }
