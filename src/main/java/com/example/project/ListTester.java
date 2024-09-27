@@ -11,7 +11,7 @@ public class ListTester {
             list.findNext();
 
                 T temp = list.retrieve();
-                while(list.last()){
+                while(!(list.last())){
                 list.findFirst();
                     
                 list.update(temp);
