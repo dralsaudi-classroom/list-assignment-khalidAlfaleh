@@ -83,11 +83,9 @@ public class DLL<T> {
                 runner2 = runner2.next;
             }
         if((runner1 != null) && (runner2 != null)){
-                current = runner1.next;
-                while(current != runner2){
-                    remove();
-                }
-                           current = head;
+                runner1.next = runner2;
+		runner2.previous = runner1;
+		current = head;
                    }
         
 	   
