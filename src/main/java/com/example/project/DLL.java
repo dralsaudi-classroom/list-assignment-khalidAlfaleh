@@ -74,7 +74,7 @@ public class DLL<T> {
 		    if(!(runner1.data == e1) && (runner1 != null)  )
 			    runner1 = runner1.previous;
 		    
-		      if(!(runner2.data == e2) && (runner2 != null) ) )
+		      if(!(runner2.data == e2) && (runner2 != null)  )
 			    runner2 = runner2.next;
 		   
 	    }
