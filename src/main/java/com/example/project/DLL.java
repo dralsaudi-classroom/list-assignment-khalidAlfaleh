@@ -87,8 +87,8 @@ public class DLL<T> {
 				    remove();
 				    current = current.next;
 			    }
-			    current = head;
-	    }
+                           findFirst() 	
+				   }
 	    }
 		    
 
