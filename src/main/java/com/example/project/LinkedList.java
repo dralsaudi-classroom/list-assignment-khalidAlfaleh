@@ -58,15 +58,15 @@ public class LinkedList<T> implements List<T>{
         if(empty())
 		return null;
 	
-	if(head.next == null)
-		 return head.data;
 	    
 	    Node<T> re = null;
 	    Node<T> runner1 = head;
 	    Node<T> runner2 = head;
 	    int k =0;
+	    
      while(runner1 != null){
 	         int j=0;
+	     
 	    while(runner2 != null){
 		    if(runner1.data == runner2.data)
                         j++;
@@ -75,7 +75,6 @@ public class LinkedList<T> implements List<T>{
 	              k=j;
         	      re = runner1;
 		    }
-		    
                 runner2 = runner2.next;
 	    }
 	    runner2 = head;
