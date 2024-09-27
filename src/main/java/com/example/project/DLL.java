@@ -76,7 +76,7 @@ public class DLL<T> {
 		    
                 runner1 = runner1.next;
                 runner2 = runner2.next;
-		    runner3 = runner.next;
+		    runner3 = runner3.next;
 
              }
 
