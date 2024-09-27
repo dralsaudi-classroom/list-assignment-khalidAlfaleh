@@ -65,31 +65,49 @@ public class DLL<T> {
             current = current.next;
     }
     public void removeBetween(T e1, T e2) {
-	    	    DLLNode<T> temp = head;
 
-	    DLLNode<T> runner1 = null;
-	    DLLNode<T> runner2 = null;
+ if (head == null) return; // List is empty
+
+    // Find the nodes for e1 and e2
+    Node<T> current = head;
+    Node<T> nodeE1 = null;
+    Node<T> nodeE2 = null;
+
+    // Traverse the list to find e1 and e2
+    while (current != null) {
+        if (current.data.equals(e1)) {
+            nodeE1 = current;
+        } else if (current.data.equals(e2)) {
+            nodeE2 = current;
+        }
+
+        if (nodeE1 != null && nodeE2 != null) {
+            break; // Both nodes found, exit loop
+        }
+
+        current = current.next; // Move to the next node
+    }
+
+    // If either node is not found, do nothing
+    if (nodeE1 == null || nodeE2 == null) return;
+
+    // Remove nodes between nodeE1 and nodeE2
+    Node<T> toRemove = nodeE1.next; // Start with the node after e1
+
+    while (toRemove != null && toRemove != nodeE2) {
+        Node<T> nextToRemove = toRemove.next; // Save the next node
+        // Remove toRemove from the list
+        toRemove.prev.next = nextToRemove; // Adjust previous node's next
+        if (nextToRemove != null) {
+            nextToRemove.prev = toRemove.prev; // Adjust next node's prev
+        }
+        toRemove = nextToRemove; // Move to the next node to remove
+    }
+
+    // Move current to head if the removal was successful
+    current = head; // Move the current pointer to the head
 
 
-        while(temp != null){
-                if(temp.data == e1)
-                   runner1 = temp;
-		
-                if(temp.data == e2)
-                     runner2 = temp;
-		
-		temp = temp.next;
-            }
-             
-      
-		    runner1.next = runner2;
-		    runner2.previous = runner1;
-
-                           current = head;
-                   
-        
-	   
-	 
 	    
         // throw new UnsupportedOperationException("Not supported yet.");
         // Write the method removeBetween, member of the class DoubleLinkedList. The method
