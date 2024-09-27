@@ -10,7 +10,7 @@ public class ListTester {
                     l.findFirst();
 
                 T temp = l.retrieve( )
-                    l.remove;
+                    l.remove();
                 while(l.last())(
                     l.findNext();
         }
