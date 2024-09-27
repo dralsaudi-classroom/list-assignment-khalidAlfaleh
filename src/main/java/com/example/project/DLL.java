@@ -82,7 +82,7 @@ public class DLL<T> {
 
              }
 
-        if((runner1 != null) && (runner2 != null) && (runner1 != runner2)){
+        if((runner1.data == e1) && (runner2.data == e2) && (runner1 != runner2)){
                 runner1.next = runner2;
 		runner2.previous = runner1;
 		current = head;
