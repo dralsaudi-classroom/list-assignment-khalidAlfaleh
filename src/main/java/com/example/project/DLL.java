@@ -75,13 +75,13 @@ public class DLL<T> {
                 if(runnerr1.data == e1)
                   runner1 = runnerr1;  break;
 	
-                runner1 = runner1.previous;
+                runnerr1 = runnerr1.previous;
             }
               while(runnerr2 != null){
                 if(runnerr2.data == e2)
 		    runner2 = runnerr2;  break;
 		      
-                runner2 = runner2.next;
+                runnerr2 = runnerr2.next;
             }
         if((runnerr1 != null) && (runnerr2 != null)){
             if( (runner1.data == e1) && (runner2.data == e2) ){
