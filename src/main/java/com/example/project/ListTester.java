@@ -7,7 +7,7 @@ public class ListTester {
             return;
 
         list.findFirst();
-        if(list.last() == null)
+        if(list.last())
             return;
 
         while(n > 0){
