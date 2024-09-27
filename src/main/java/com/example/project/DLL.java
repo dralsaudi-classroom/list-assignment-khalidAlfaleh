@@ -72,10 +72,10 @@ public class DLL<T> {
 
 	    while( (runner1 != null) || (runner2 != null) ){
 		    if(!(runner1.data == e1) )
-			    runner1 = runner1.next;
+			    runner1 = runner1.previous;
 		    
 		      if(!(runner2.data == e2) )
-			    runner2 = runner2.previous;
+			    runner2 = runner2.next;
 		   
 	    }
            if((runner1 != null) && (runner2 != null) ){
