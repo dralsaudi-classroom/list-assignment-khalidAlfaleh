@@ -17,10 +17,10 @@ public class ListTester {
                 }
       
                 list.insert(temp);
-            
+                        n--;
+
         }
             
-            n--;
         
 
 
