@@ -14,7 +14,7 @@ public class ListTester {
                     
                 list.findNext();
                 }
-                l.insert(temp);
+                list.insert(temp);
                         n--;
 
         }
