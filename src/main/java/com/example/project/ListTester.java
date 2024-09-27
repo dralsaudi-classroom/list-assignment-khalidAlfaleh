@@ -9,9 +9,9 @@ public class ListTester {
         while(n != 0){
                     l.findFirst();
 
-                T temp = l.retrieve( )
+                T temp = l.retrieve( );
                     l.remove();
-                while(l.last())(
+                while(l.last()){
                     l.findNext();
         }
                 l.insert(temp);
