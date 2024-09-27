@@ -81,14 +81,13 @@ public class DLL<T> {
 		temp = temp.next;
             }
              
-        if((runner1 != null) && (runner2 != null)){
-            if( (runner1.data == e1) && (runner2.data == e2) ){
+      
 		    runner1.next = runner2;
 		    runner2.previous = runner1;
 
                            current = head;
-                   }
-        }
+                   
+        
 	   
 	 
 	    
