@@ -69,8 +69,7 @@ public class DLL<T> {
         
 	     DLLNode<T> runner1 = head;
 	DLLNode<T> runner2 = head;
-int i = 0;
-	    int k = 0;
+
 	    while( runner1 != null  && runner2 != null ){
                 if(runner1.data == e1 && runner2.data == e2) 
                     break;
