@@ -81,7 +81,6 @@ public class DLL<T> {
 
 	    if(temp1 != null && temp2 != null){
 		    temp1.next = temp2;
-		    temp2.previous = temp1;
 		    current = head;
 	    }
 		    
