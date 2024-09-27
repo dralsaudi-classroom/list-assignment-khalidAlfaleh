@@ -11,9 +11,9 @@ public class ListTester {
 
                 T temp = list.retrieve();
                     list.remove();
-                while(list.last())
+                while(list.last()){
                     list.findNext();
-             
+                }
       
                 list.insert(temp);
             
