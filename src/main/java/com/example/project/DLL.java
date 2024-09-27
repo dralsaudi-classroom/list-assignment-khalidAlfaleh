@@ -73,7 +73,7 @@ int i = 0;
 	    int k = 0;
 	    while(runner1 != null && (k != 1)){
                 if(runner1.data == e1)
-                    k = 1
+                    k = 1;
 	
                 runner1 = runner1.previous;
             }
