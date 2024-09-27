@@ -69,16 +69,17 @@ public class DLL<T> {
         
 	     DLLNode<T> runner1 = current;
 	DLLNode<T> runner2 = current;
-
-	    while(runner1 != null){
+int i = 0;
+	    int k = 0;
+	    while(runner1 != null && (k != 1)){
                 if(runner1.data == e1)
-                    break;
+                    k = 1
 	
                 runner1 = runner1.previous;
             }
-              while(runner2 != null){
+              while(runner2 != null && (i != 1)){
                 if(runner2.data == e2)
-		     break;
+		     i = 1;
 		      
                 runner2 = runner2.next;
             }
