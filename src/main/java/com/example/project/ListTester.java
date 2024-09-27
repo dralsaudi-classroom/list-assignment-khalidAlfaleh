@@ -3,6 +3,7 @@ package com.example.project;
 public class ListTester {
     public static <T> void circularLeftShift(List <T> list, int n)
     {
+        int i = 0;
       if(list.empty())
             return;
 
