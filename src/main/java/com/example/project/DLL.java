@@ -66,8 +66,8 @@ public class DLL<T> {
     }
     public void removeBetween(T e1, T e2) {
 	    if(!empty()){
-          node<T> runner1 = current;
-	node<T> runner2 = current;
+          DLLNode<T> runner1 = current;
+	DLLNode<T> runner2 = current;
 		    while(runner1 != null){
 			    if(runner1.data == e1)
 				    break;
