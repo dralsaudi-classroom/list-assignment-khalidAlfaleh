@@ -80,6 +80,7 @@ public class DLL<T> {
 			      
 			    runner2 = runner2.next;
 		    }
+	    if((runner1 == null) && (runner2 == null)){
 		    if( (runner1.data == e1) && (runner2.data == e2) ){
 			    current = runner1.next;
 			    while(current != runner2){
@@ -87,13 +88,7 @@ public class DLL<T> {
 				    current = current.next;
 			    }
 			    current = head;
-		    
-		    
-
-
-
-
-		    
+	    }
 	    }
 		    
 
