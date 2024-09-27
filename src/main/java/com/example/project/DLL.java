@@ -78,7 +78,7 @@ public class DLL<T> {
                 runner1 = runner1.previous;
             }
               while(runnerr2 != null){
-                if(runner2r.data == e2)
+                if(runnerr2.data == e2)
 		    runner2 = runnerr2;  break;
 		      
                 runner2 = runner2.next;
