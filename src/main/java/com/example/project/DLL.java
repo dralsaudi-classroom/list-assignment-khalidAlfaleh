@@ -85,7 +85,7 @@ public class DLL<T> {
 			    current = runner1.next;
 				    
 	    while(current != runner2){
-		   remove()
+		   remove();
 		    current = current.next;
 	    }
                     findFirst();
