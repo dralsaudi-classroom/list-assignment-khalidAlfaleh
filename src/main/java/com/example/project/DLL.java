@@ -87,7 +87,7 @@ public class DLL<T> {
                 while(current != runner2){
                     remove();
                 }
-                           findFirst();
+                           current = head;
                    }
         }
 	   
