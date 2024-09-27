@@ -69,9 +69,9 @@ public class DLL<T> {
  if (head == null) return; // List is empty
 
     // Find the nodes for e1 and e2
-    Node<T> current = head;
-    Node<T> nodeE1 = null;
-    Node<T> nodeE2 = null;
+    DLLNode<T> current = head;
+    DLLNode<T> nodeE1 = null;
+    DLLNode<T> nodeE2 = null;
 
     // Traverse the list to find e1 and e2
     while (current != null) {
@@ -92,10 +92,10 @@ public class DLL<T> {
     if (nodeE1 == null || nodeE2 == null) return;
 
     // Remove nodes between nodeE1 and nodeE2
-    Node<T> toRemove = nodeE1.next; // Start with the node after e1
+    DLLNode<T> toRemove = nodeE1.next; // Start with the node after e1
 
     while (toRemove != null && toRemove != nodeE2) {
-        Node<T> nextToRemove = toRemove.next; // Save the next node
+        DLLNode<T> nextToRemove = toRemove.next; // Save the next node
         // Remove toRemove from the list
         toRemove.prev.next = nextToRemove; // Adjust previous node's next
         if (nextToRemove != null) {
