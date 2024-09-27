@@ -3,18 +3,18 @@ package com.example.project;
 public class ListTester {
     public static <T> void circularLeftShift(List <T> list, int n)
     {
-        if(l.empty())
+      if(list.empty())
             return;
 
         while(n != 0){
-                    l.findFirst();
+                    list.findFirst();
 
-                T temp = l.retrieve( );
-                    l.remove();
-                while(l.last()){
-                    l.findNext();
+                T temp = list.retrieve( )
+                    list.remove();
+                while(list.last())(
+                    list.findNext();
         }
-                l.insert(temp);
+                list.insert(temp);
             
 
             
