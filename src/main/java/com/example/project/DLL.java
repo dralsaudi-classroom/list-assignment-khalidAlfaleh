@@ -83,10 +83,10 @@ public class DLL<T> {
 			    runner2 = runner2.next;
 		    }
 		    if( (runner1 == e1) && (runner2 == e2) ){
-			    current = runner1.next
+			    current = runner1.next;
 			    while(current.next != runner2){
 				    remove();
-				    current = current.next
+				    current = current.next;
 			    }
 		    }
 		    
