@@ -35,7 +35,7 @@ public class ListTester {
     }
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
     {
-                DLLNode<T> tmp = new DLLNode<T>();
+                DLL<T> tmp = new DLL<T>();
         do{
             l1.findNext();
           }while(!(l1.last()));
