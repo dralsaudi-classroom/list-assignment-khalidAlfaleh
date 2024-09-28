@@ -80,7 +80,7 @@ public class DLL<T> {
 	    }
 	    
 
-	    if(temp1 != null && temp2 != null){
+	    if(temp1 != null && temp2 != null && temp1 != temp2){
 		    temp1.next = temp2;
 		    current = head;
 	    }
