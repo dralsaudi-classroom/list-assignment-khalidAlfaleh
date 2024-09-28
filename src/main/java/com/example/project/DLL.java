@@ -66,8 +66,8 @@ public class DLL<T> {
     }
     public void removeBetween(T e1, T e2) {
 	    DLLNode<T> runner = head;
-	    DLLNode<T> temp1 = head;
-	    DLLNode<T> temp2 = head;
+	    DLLNode<T> temp1 = null;
+	    DLLNode<T> temp2 = null;
 
 	    while(runner != null){
 		    if(runner.data == e1)
@@ -78,6 +78,7 @@ public class DLL<T> {
 
 		    runner = runner.next;
 	    }
+	    
 
 	    if(temp1 != null && temp2 != null){
 		    temp1.next = temp2;
