@@ -39,9 +39,10 @@ public class ListTester {
         while(!(l1.last()))
             l1.findNext();
 
-        while((!l1.first()))
-            tmp.insert(l1.rtreive());
-
+        while((!l1.first())){
+            tmp.insert(l1.retrieve());
+            l1.findPrevious();
+        }
 
 
         
