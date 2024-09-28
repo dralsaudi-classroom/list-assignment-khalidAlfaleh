@@ -51,7 +51,6 @@ public class ListTester {
 
         }
         
-        //throw new UnsupportedOperationException("Not supported yet.");
         // Write the method reverseCopy, user of DoubleLinkedList, which copies the elements
         // of l1 to l2 in reverse order. The list l1 must not change. Assume that l2 is empty.
         // The method signature is public static <T> void reverseCopy(DoubleLinkedList<T> l1,
