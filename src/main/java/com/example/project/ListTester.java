@@ -43,6 +43,11 @@ public class ListTester {
             tmp.insert(l1.retrieve());
             l1.findPrevious();
         }
+                tmp.findFirst();
+        while(!(tmp.last())){
+            l2.insert(tmp.retrieve());
+            tmp.findNext();
+        }
 
 
         
