@@ -74,7 +74,6 @@ public class DLL<T> {
 			    temp1 = runner;
 		    if(runner.data == e2)
 			    temp2 = runner;
-
 		    runner = runner.next;
 	    }
 	    
