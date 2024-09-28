@@ -72,7 +72,6 @@ public class DLL<T> {
 	    while(runner != null){
 		    if(runner.data == e1)
 			    temp1 = runner;
-
 		    if(runner.data == e2)
 			    temp2 = runner;
 
