@@ -41,12 +41,12 @@ public class ListTester {
           }
 
             
-       do{
+       while(!(l1.first())){
             l2.insert(l1.retrieve());
             l1.findPrevious();
-        }while(!(l1.first()));
+        }
             
-              
+              l2.insert(l1.retrieve());
 
 
         
