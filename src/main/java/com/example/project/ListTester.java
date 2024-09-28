@@ -36,6 +36,7 @@ public class ListTester {
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
     {
                 //DLL<T> tmp = new DLL<T>();
+        if(!(l1.empty())){
         while(!(l1.last())){
             l1.findNext();
           }
@@ -48,7 +49,7 @@ public class ListTester {
             
               l2.insert(l1.retrieve());
 
-
+        }
         
         //throw new UnsupportedOperationException("Not supported yet.");
         // Write the method reverseCopy, user of DoubleLinkedList, which copies the elements
