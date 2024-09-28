@@ -1,4 +1,4 @@
-package com.example.project;
+  package com.example.project;
 
 public class LinkedList<T> implements List<T>{
 	private Node<T> head;
@@ -55,7 +55,33 @@ public class LinkedList<T> implements List<T>{
         }
     }
     public T mostFrequentElement() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(empty())
+		return null;
+	
+	    
+	    Node<T> re = null;
+	    Node<T> runner1 = head;
+	    Node<T> runner2 = head;
+	    int k =0;
+	    
+     while(runner1 != null){
+	         int j=0;
+	     
+	    while(runner2 != null){
+		    if(runner1.data == runner2.data)
+                        j++;
+		    
+		      if(j>k){
+	              k=j;
+        	      re = runner1;
+		    }
+                runner2 = runner2.next;
+	    }
+	    runner2 = head;
+         runner1 = runner1.next;
+     }
+	    return re.data;
+
         //         Write the method mostFrequentElement, member of the class LinkedList, that returns
         // the most frequent element in the list. The most frequent element is the element
         // appearing the highest number of times. If one or more element appear the same
