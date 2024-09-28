@@ -36,21 +36,21 @@ public class ListTester {
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
     {
                 DLL<T> tmp = new DLL<T>();
-        do{
+        while(!(l1.last())){
             l1.findNext();
-          }while(!(l1.last()));
+          }
             
-       do{
+       while((!l1.first())){
             tmp.insert(l1.retrieve());
             l1.findPrevious();
-        }while((!l1.first()));
+        }
             
                 tmp.findFirst();
         
-        do{
+        while(!(tmp.last())){
             l2.insert(tmp.retrieve());
             tmp.findNext();
-        }while(!(tmp.last()));
+        }
 
 
         
